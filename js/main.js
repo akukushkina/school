@@ -1,5 +1,4 @@
-import "https://github.com/flackr/scroll-timeline/blob/master/dist/scroll-timeline.js"
-
+// top line
 const scrollTracker = document.querySelector(".scroll-tracker");
 
 const scrollTrackingTimeline = new ScrollTimeline({
@@ -17,3 +16,39 @@ scrollTracker.animate(
     timeline: scrollTrackingTimeline,
   }
 );
+
+
+// animation for images
+
+const animatedImages = document.querySelectorAll(".image-animate");
+const infoAnimation = document.querySelector(".info__inner")
+
+
+
+animatedImages.forEach( (image) =>{
+    const animatedImageTimeline = new ScrollTimeline ({
+    scrollOffsets: [
+        {
+            target: infoAnimation, edge: "end", threshold: "1"
+        },
+        {
+            target: infoAnimation, edge:"start", threshold: "1"
+        },
+    ]
+});
+image.animate({
+    transform: [
+        "scale(0)",
+        "scale(1)"
+    ],
+    opacity: ["0", "1"],
+},
+{
+    duration: 1,
+    timeline: animatedImageTimeline,
+})
+})
+
+
+
+// check email
