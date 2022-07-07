@@ -17,37 +17,26 @@ scrollTracker.animate(
   }
 );
 
-
 // animation for images
 
-const animatedImages = document.querySelectorAll(".image-animate");
-const infoAnimation = document.querySelector(".info__inner")
+// boy
+const animatedImages = document.querySelectorAll(".info__img");
 
+window.addEventListener("scroll", checkImages);
 
+checkImages();
 
-animatedImages.forEach( (image) =>{
-    const animatedImageTimeline = new ScrollTimeline ({
-    scrollOffsets: [
-        {
-            target: infoAnimation, edge: "end", threshold: "1"
-        },
-        {
-            target: infoAnimation, edge:"start", threshold: "1"
-        },
-    ]
-});
-image.animate({
-    transform: [
-        "scale(0)",
-        "scale(1)"
-    ],
-    opacity: ["0", "1"],
-},
-{
-    duration: 1,
-    timeline: animatedImageTimeline,
-})
-})
+function checkImages() {
+  const triggerBottom = (window.innerHeight / 5) * 4;
+  animatedImages.forEach((image) => {
+    const imageTop = image.getBoundingClientRect().top;
+    if (imageTop < triggerBottom) {
+      image.classList.add("show");
+    } else {
+      image.classList.remove("show");
+    }
+  });
+};
 
 
 
