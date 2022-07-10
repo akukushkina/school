@@ -1059,7 +1059,8 @@ a {
   .info__item:not(:last-child),
   .article:not(:last-child),
   .member:not(:last-child),
-  .summary__list {
+  .summary__list,
+  .footer__text {
     margin-bottom: 30px;
   }
 
@@ -1068,7 +1069,8 @@ a {
   .articles,
   .comments,
   .members,
-  .summary__inner {
+  .summary__inner,
+  .footer__inner {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -1182,6 +1184,10 @@ a {
 
 .form__btn {
   margin-left: 0;
+}
+
+.footer__inner {
+  text-align: center;
 }
 }
 
