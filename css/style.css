@@ -108,7 +108,8 @@ a {
   background-color: var(--accent-color);
 }
 
-.burger__menu div:not(:last-child) {
+.burger__menu div:not(:last-child),
+.article__text {
   margin-bottom: 10px;
 }
 
@@ -569,10 +570,6 @@ a {
   margin-bottom: 10px;
 }
 
-.article__text {
-  margin-bottom: 10px;
-}
-
 .article__sales {
   display: block;
   font-weight: 700;
@@ -770,6 +767,8 @@ a {
   border: 1px solid #e6e6e6;
   border-radius: 5px 0 0 5px;
 }
+
+
 
 .form__btn {
   padding: 15px 23px;

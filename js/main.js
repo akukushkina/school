@@ -91,4 +91,4 @@ burger__btn.onclick = function () {
   menu__list.classList.toggle("seen");
 }
 
-// check email
+
