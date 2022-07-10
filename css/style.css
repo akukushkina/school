@@ -1019,7 +1019,9 @@ a {
 
   .menu__item:not(:last-child),
   .article:not(:last-child),
-  .info__content {
+  .info__content,
+  .summary__item,
+  .summary__list {
     margin-right: 0;
   }
 
@@ -1036,7 +1038,9 @@ a {
   .about__content,
   .benefits__item,
   .comment,
-  .member {
+  .member,
+  .summary__list,
+  .contacts {
     text-align: center;
     max-width: 100%;
   }
@@ -1054,7 +1058,8 @@ a {
   .benefits__item:not(:last-child),
   .info__item:not(:last-child),
   .article:not(:last-child),
-  .member:not(:last-child) {
+  .member:not(:last-child),
+  .summary__list {
     margin-bottom: 30px;
   }
 
@@ -1062,7 +1067,8 @@ a {
   .info__list,
   .articles,
   .comments,
-  .members {
+  .members,
+  .summary__inner {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -1112,6 +1118,14 @@ a {
 
   .form {
     margin: 0 auto;
+}
+
+.contacts__link {
+  padding-left: 0;
+}
+
+.contacts__link::before {
+  left: -35px;
 }
 }
 
