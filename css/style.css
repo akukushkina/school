@@ -1052,13 +1052,17 @@ a {
   margin-bottom: 30px;
 }
 
-.benefits__list {
+.benefits__list,
+.info__list,
+.articles,
+.comments {
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.benefits__item {
+.benefits__item,
+.comment {
   max-width: 100%;
   text-align: center;
 }
@@ -1076,10 +1080,7 @@ a {
 
 /* info */
 
-.info__list {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.info__list{
   padding: 40px 0;
 }
 
@@ -1116,11 +1117,6 @@ a {
   margin-bottom: 50px;
 }
 
-.articles {
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
 
 .article {
   max-width: 100%;
@@ -1129,6 +1125,21 @@ a {
 .article:not(:last-child) {
   margin-right: 0;
   margin-bottom: 30px;
+}
+
+
+/* reviews */
+
+.reviews {
+  padding: 80px 0;
+}
+
+.comment__author--img {
+  float: none;
+}
+
+.comment__author--name {
+  display: block;
 }
 
 }
