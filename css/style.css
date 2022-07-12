@@ -513,6 +513,10 @@ a {
   margin-right: 10px;
 }
 
+.article__icon:hover {
+  background-color: var(--accent-color);
+}
+
 .article__icon--saved::after,
 .article__icon--cart::after,
 .article__icon--watch::after {
@@ -532,6 +536,7 @@ a {
 
 .article__icon--watch::after {
   content: url(../images/icons/eye.svg);
+  top: 55%;
 }
 
 .article__content {
@@ -916,23 +921,7 @@ a {
   }
 }
 
-/* @keyframes slide {
-  0% {
-    left: 800px;
-  }
-  100% {
-    left: 190px;
-  }
-}
 
-@keyframes rise {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
-} */
 
 /* media */
 @media (max-width: 1200px) {
