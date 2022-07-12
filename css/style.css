@@ -403,7 +403,7 @@ a {
 .info__img {
   position: absolute;
   transform: translateX(400%);
-  transition-duration: 1s;
+  transition-duration: .5s;
 }
 
 .info__img--1 {
@@ -456,7 +456,7 @@ a {
 
 .article.scale {
   transform: scale(1);
-  transition-duration: 1s;
+  transition-duration: .5s;
 }
 
 .article:not(:last-child) {
@@ -632,7 +632,7 @@ a {
   padding: 30px 84px;
   text-align: center;
   transform: translateX(-400%);
-  transition-duration: 1s;
+  transition-duration: .5s;
 }
 
 .comment.slice {
@@ -683,7 +683,7 @@ a {
   padding-bottom: 30px;
   overflow: hidden;
   transform: translateX(-400%);
-  transition-duration: 1s;
+  transition-duration: .5s;
 }
 
 .member.slice {
@@ -890,7 +890,7 @@ a {
   right: 10px;
   bottom: 10px;
   z-index: 5;
-  transition: all .5s ease;
+  transition: ease;
 }
 
 .up_btn svg {
