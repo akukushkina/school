@@ -882,6 +882,20 @@ a {
   margin-right: 20px;
 }
 
+.up_btn {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: rgba(256, 256, 256, .8);
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  z-index: 5;
+  transition: all .5s ease;
+}
+
+.up_btn svg {
+  transform: rotate(-90deg);
+}
 /* animation */
 @keyframes appearence {
   0% {

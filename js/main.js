@@ -87,8 +87,17 @@ function checkMembers() {
 
 const burger__btn = document.querySelector(".burger__menu");
 const menu__list = document.querySelector(".menu__list");
-burger__btn.onclick = function () {
-  menu__list.classList.toggle("seen");
+const menu__link = document.querySelectorAll(".menu__link");
+
+const unseen = function() {
+  menu__list.classList.remove("seen");
 }
 
+burger__btn.onclick = function () {
+  menu__list.classList.toggle("seen");
+}  
+
+  menu__link.forEach( (n) => {
+    n.addEventListener("click", unseen);
+  })
 
